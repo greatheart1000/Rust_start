@@ -1,6 +1,6 @@
 # Rust_start
 ## RUST语言入门
-
+### Rust学习资料 https://kaisery.github.io/trpl-zh-cn/ch01-02-hello-world.html
 wsl 环境下 安装Rust curl -4 --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh <br>
 配置环境变量 source $HOME/.cargo/env  <br>
 验证安装：   <br>
