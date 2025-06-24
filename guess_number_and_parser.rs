@@ -63,5 +63,23 @@ fn main() {
     for element in b {
         println!("the element is {element}")
     }
+for number in (1..4).rev() {
+        println!("the value is {}",number);
+    }
+let mut s = String::from("hello");
+    s.push_str("world");
+    println!("{s}") //helloworld 这两个冒号 :: 是运算符，允许将特定的 from 函数置于 String 类型的命名空间（namespace）下，而不需要使用类似 string_from 这样的名字
+
 
 }
+
+//可变引用
+fn main() {
+    let mut s1 = String::from("hello");
+    change(&mut s1);
+    print!("{s1}")
+}
+
+fn change( s: &mut String){
+    s.push_str(",world");
+}    
