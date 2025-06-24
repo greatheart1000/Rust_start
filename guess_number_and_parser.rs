@@ -28,3 +28,15 @@ fn main() {
 fn another_function(x:u32){
     println!("the number is {x}");
 }
+
+fn main() {
+   let x=10;
+   if x>12 {
+    println!("the number is big than x");
+   }
+   else if x==10 {
+       println!("the number is equal to x");
+   }
+   else {
+    println!("the number is smaller than x");
+   }
