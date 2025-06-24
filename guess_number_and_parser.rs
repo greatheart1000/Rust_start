@@ -19,3 +19,12 @@ fn main() {
     }
 
 }
+
+
+fn main() {
+   another_function(10);
+}
+
+fn another_function(x:u32){
+    println!("the number is {x}");
+}
