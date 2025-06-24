@@ -51,3 +51,17 @@ fn main() {
     };
     println!("The result is {result}");
 }  //The result is 22
+
+fn main() {
+    let a =[1,2,3,4,5,6];
+    let mut index=0;
+    while index<5 {
+        println!("the value is {}",a[index]);
+        index+=1;
+    }
+    let b=[10,20,30,40,50];
+    for element in b {
+        println!("the element is {element}")
+    }
+
+}
