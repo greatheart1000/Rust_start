@@ -40,3 +40,14 @@ fn main() {
    else {
     println!("the number is smaller than x");
    }
+
+fn main() {
+    let mut counter=5;
+    let result =loop{
+        counter+=1;
+        if counter>10 {
+            break counter*2;
+        }
+    };
+    println!("The result is {result}");
+}  //The result is 22
