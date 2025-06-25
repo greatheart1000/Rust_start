@@ -110,3 +110,23 @@ fn main(){
 }
 
 //match的用法 
+fn get_index(s:&str)->Option<usize>{
+    for (index,&tiem) in s.as_bytes().iter().enumerate(){
+        if tiem==b'b'{
+            return Some(index);
+    }
+    }
+    None
+}
+
+fn main(){
+    let strs ="hellovb";
+    match get_index(strs) {
+        Some(index)=>{
+            println!("索引是:{}",index);
+        }
+        None=>{
+            println!("字符串不存在");
+        }
+    }
+}
