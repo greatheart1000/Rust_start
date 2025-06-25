@@ -92,3 +92,21 @@ for (i, &item) in s.as_bytes().iter().enumerate() { … }
 - 用 `String::from("…")` 得到的是一个**拥有者**，可修改、可伸缩，存储在堆上。  
 - 用 `&str` 得到的是一个**借用**，指向某段 UTF-8 数据，读不可写，存储在字面量区或堆上已有的 `String` 里。  
 - 如果你只读、只需要索引／遍历，函数签名写成 `&str` 最通用；要拿到一个可变的、可持有所有权的字符串，就用 `String`。
+
+
+fn get_index(s:&str)->Option<usize>{
+    for (i,&item) in s.as_bytes().iter().enumerate(){
+        if item==b'b'{
+            return Some(i);
+    }
+    
+}
+None
+}
+fn main(){
+    let s="helloby";
+    let index = get_index(s).unwrap();
+    println!("索引位置在{index}");
+}
+
+//match的用法 
