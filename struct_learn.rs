@@ -39,3 +39,21 @@ fn main(){
     let are=get_area((30,50));
     println!("{are}");
 }
+//我们使用结构体为数据命名来为其赋予意义。我们可以将我们正在使用的元组转换成一个有整体名称而且每个部分也有对应名字的结构体
+fn area(Reat:&Reatange)->u32{
+    Reat.heigth*Reat.width
+}
+
+struct Reatange{
+    heigth:u32,
+    width:u32,
+}
+
+fn main(){
+    let rect1=Reatange{
+       heigth:30,
+        width:50,
+    };
+    println!("The area of the rectangle is {} square pixels",area(&rect1))
+
+}
