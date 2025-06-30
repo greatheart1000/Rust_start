@@ -30,3 +30,12 @@ fn main(){
     let point =Point(0,0,0);
     let subject=AnyWal;
 }
+
+fn get_area(dimension:(u32,u32))->u32 {
+    dimension.0*dimension.1
+}
+
+fn main(){
+    let are=get_area((30,50));
+    println!("{are}");
+}
