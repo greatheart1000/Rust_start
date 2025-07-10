@@ -102,4 +102,18 @@ fn main(){
     else {
         println!("小于3")
     }
+
 }
+'''python
+fn main(){
+   let mut counter=100;
+   loop {
+       if counter>0 {
+        println!("contuner :{}",counter);
+        counter-=1;
+       }
+       else {
+        break;
+       }
+   }
+} '''
