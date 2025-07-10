@@ -93,3 +93,13 @@ enum Option<T> {
 - `Some(x)` 就是把 `x` 包在 `Option` 里，代表“这里有个值”。  
 - `None` 代表“这里什么都没有”。  
 - 通过 `match`、`if let`、或者 `Option` 自带的方法（`unwrap_or`、`map`、`and_then`、`as_ref`、`as_mut`…）来安全地获取或操作这个值，避免 `null` 带来的空指针崩溃。
+- if else 表达式
+fn main(){
+    let num=3;
+    if num>=3{
+        println!("值大于3")
+    }
+    else {
+        println!("小于3")
+    }
+}
