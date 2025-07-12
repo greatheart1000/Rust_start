@@ -61,6 +61,17 @@ fn main(){
     //println!("the a is {}",a); //现在不能继续引用了 
     //println!("the b is {}",b);
 }
+
+//
+fn main(){
+    let a=String::from("a");
+    let b=String::from("b");
+    let c= String::from("c");
+    //let total =a+"-"+&b+"-"+&c;
+    let s= format!("{}-{}-{}",a,b,c);
+    println!("the str is {}",s)
+    //println!("the str is {}",total);
+}
            
 
            
