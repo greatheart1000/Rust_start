@@ -22,3 +22,8 @@ fn main(){
    )
 
 }
+//struct tuple
+strcut color(u32,u32,u32);
+struct Point(u32,u32,u32);
+let a1 =color(0,0,0);
+let b1=Point(255,255,255);
