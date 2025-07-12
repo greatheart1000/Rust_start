@@ -27,3 +27,20 @@ strcut color(u32,u32,u32);
 struct Point(u32,u32,u32);
 let a1 =color(0,0,0);
 let b1=Point(255,255,255);
+
+
+enum Message{
+    Quit,
+    Move {x:i32,y:i32},
+    Write(String),
+    ChangeColor(i32,i32,i32),}
+impl Message {
+    fn call(&self){}
+}
+fn main(){
+    let q = Message::Quit;
+    let m = Message::Move {x: 12,y: 24 };
+    let W = Message::Write(String:: from("Hello"));
+    let C = Message::ChangeColor(0, 255, 255);
+m.call();
+}
