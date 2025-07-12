@@ -117,3 +117,14 @@ fn main(){
        }
    }
 } '''
+
+
+### Rust的代码组织 <br>
+·代码组织主要包括：
+－哪些细节可以暴露，哪些细节是私有的
+－作用域内哪些名称有效
+### 模块系统:
+－Package（包）：Cargo 的特性，让你构建、测试、共享crate  <br>
+-Crate（单元包）：一个模块树，它可产生一个library或可执行文件 <br>
+－Module（模块）、Use：让你控制代码的组织、作用域、私有路径 <br>
+-Path（路径）：为struct、function或module等项命名的方式 <br>
