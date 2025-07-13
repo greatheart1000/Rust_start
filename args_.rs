@@ -263,3 +263,9 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+测试驱动开发
+TDD (Test-Driven Development)
+·编写一个会失败的测试，运行该测试，确保它是按照预期的原因失败
+·编写或修改刚好足够的代码，让新测试通过
+·重构刚刚添加或修改的代码，确保测试会始终通过
+·返回步骤1，继续
